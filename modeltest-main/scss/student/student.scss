@@ -1,0 +1,300 @@
+@import "../mixin";
+@import "../var";
+
+:root{
+    --sub-1: 40%;
+    --sub-2: 70%;
+    --sub-3: 50%;
+    --sub-4: 15%;
+    --sub-5: 100%;
+}
+
+// Student profile
+.student-details{
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    h2{
+        margin-top: 3rem;
+        text-align: center;
+        font-family: $ffHeading;
+    }
+    .student-info{
+        margin-top: 1rem;
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        border: 2px solid;
+        .profile-student{
+            font-family: $ffHeading2;
+            h5{
+                font-size: 1rem;
+                span{
+                    margin-left: 3%;
+                }
+            }
+            margin-left: 5%;
+            margin-top: 5%;
+        }
+        .image-div{
+            margin-left: auto;
+            margin-right: auto;
+            width: 6rem;
+            height: 6.5rem;
+            margin-top: 4%;
+            img{
+                @include imgFit;
+            }
+        }
+    }
+}
+
+
+// participation
+.participatiion{
+    .p-sub{
+        margin-top: 6%;
+        h4{
+            margin-bottom: 2rem;
+            font-family: $ffHeading;
+        }
+        #perform{
+            padding-right: 0;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 0;
+            .test{
+                border-radius: 0.5rem;
+                text-align: center;
+                width: 100%;
+                padding-top: 5%;
+                padding-bottom: 5%;
+                margin-bottom: 2rem;
+                box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+                &:hover{
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                }
+            }
+        }
+
+        .button{
+            @include button;
+            margin-left: auto;
+            width: 10rem;
+        }
+    }
+}
+
+// attended Quiz
+.attended-quiz{
+    margin-top: 6%;
+    h4{
+        margin-bottom: 2rem;
+        font-family: $ffHeading;
+    }
+    #join{
+        .test{
+            border-radius: 0.5rem;
+            text-align: center;
+            width: 100%;
+            padding-top: 5%;
+            padding-bottom: 5%;
+            margin-bottom: 2rem;
+            box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+            &:hover{
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            }
+        }
+    }
+
+}
+
+// statistics
+.statistics{
+    margin-top: 5%;
+    padding-bottom: 10%;
+    h4{
+        text-align: center;
+        font-family: $ffHeading;
+        margin-bottom: 2rem;
+    }
+    .statistics-table{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        tr, td{
+            font-family: $ffPara1;
+            font-size: 1.3rem;
+            .progress{
+                height: 12px;
+                margin-top: 1%;
+                border-radius: 1rem;
+                .sub-1{
+                    width: var(--sub-1);
+                  }
+                  .sub-2{
+                    width: var(--sub-2);
+                  }
+                  .sub-3{
+                    width: var(--sub-3);
+                  }
+                  .sub-4{
+                    width: var(--sub-4);
+                  }
+                  .sub-5{
+                    width: var(--sub-5);
+                  }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .student-details{
+        .student-info{
+            width: 50%;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .student-details{
+        .student-info{
+            width: 70%;
+            .profile-student{
+                h5{
+                    font-size: 100%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+    .student-details{
+        .student-info{
+            width: 75%;
+        }
+    }
+// participation
+.participatiion{
+    margin-top: 5rem;
+    .p-sub{
+        text-align: center;
+        .col-sm-6{
+            width: 50%;
+            .test{
+                width: 75%;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 3%;
+                padding-bottom: 3%;
+                h5{
+                    font-size: 100%;
+                }
+             }
+        }
+        .button{
+            margin-right: 5%;
+        }
+    }
+}
+// attended Quiz
+.attended-quiz{
+    margin-top: 3rem;
+    h4{
+        text-align: center;
+    }
+    .row{
+        text-align: center;
+        .col-sm-6{
+            width: 50%;
+            .test{
+                width: 75%;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 3%;
+                padding-bottom: 3%;
+                h5{
+                    font-size: 100%;
+                }
+             }
+        }
+    }
+}
+
+// statistics
+.statistics{
+    margin-top: 3rem;
+    h4{
+        margin-bottom: 2rem;
+    }
+    .statistics-table{
+        tr, td{
+            .progress{
+                height: 10px;
+            }
+        }
+    }
+}
+}
+
+
+@media (max-width: 350px) {
+// participation
+.participatiion{
+    .p-sub{
+        .col-sm-6{
+            .test{
+                width: 85%;
+                padding-top: 5%;
+                padding-bottom: 3%;
+                margin-bottom: 2rem;
+                h5{
+                    font-size: 0.9rem;
+                }
+             }
+        }
+        .bttn{
+            width: 88%;
+            .button{
+                span{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+
+    }
+}
+// attended Quiz
+.attended-quiz{
+    margin-top: 4rem;
+    h4{
+        text-align: center;
+    }
+    .row{
+        .col-sm-6{
+            .test{
+                width: 85%;
+                padding-top: 5%;
+                padding-bottom: 3%;
+                margin-bottom: 2rem;
+                h5{
+                    font-size: 0.9rem;
+                }
+             }
+        }
+    }
+}
+// statistics
+.statistics{
+    margin-top: 3rem;
+    .statistics-table{
+        width: 90%;
+        tr, td{
+            font-size: 100%;
+            .progress{
+                height: 08px;
+            }
+        }
+    }
+}
+}
