@@ -61,11 +61,11 @@
             text-align: center;
             transition: 400ms;
             a{
-                text-decoration: none;
-                font-weight: bold;
                 color: white;
-                font-family: $ffHeading2;
                 font-size: 1rem;
+                font-weight: bold;
+                text-decoration: none;
+                font-family: $ffHeading2;
             }
             &:hover{
                 box-shadow: rgba(56, 95, 102, 0.37) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
@@ -171,9 +171,3 @@
 
     }
 }
-
-
-
-
-
-

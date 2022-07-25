@@ -79,11 +79,11 @@
 }
 
 .about-details .row .column .card-header a {
-  text-decoration: none;
-  font-weight: bold;
   color: white;
-  font-family: Play;
   font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: Play;
 }
 
 .about-details .row .column .card-header:hover {
