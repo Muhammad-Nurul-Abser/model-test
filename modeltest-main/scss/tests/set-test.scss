@@ -98,7 +98,7 @@ main{
         }
         
         .select-number{
-            width: 73%;
+            width: 78%;
             margin-top: 2rem;
             text-align: center;
             padding: 0%;
@@ -215,6 +215,7 @@ main{
                     border-radius: 5px;
                     border: none;
                     outline: none;
+                    float: right;
                     background-color: darkblue;
                     color: $white;
                     height: 2rem;
@@ -232,7 +233,7 @@ main{
         .submit-btn{
             @include button;
             width: 50%;
-            margin-top: 7rem;
+            margin-top: 4rem;
             text-align: center;
             margin-left: auto;
             margin-right: auto;
@@ -241,6 +242,7 @@ main{
 
         .simple-question{
             width: 80%;
+            padding-top: 7px;
             margin-left: auto;
             margin-right: auto;
             margin-top: 3rem;
