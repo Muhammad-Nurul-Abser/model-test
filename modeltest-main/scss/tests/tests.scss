@@ -37,7 +37,6 @@
       width: 100%;
       height: 10rem;
       margin-top: 2rem;
-      width: 100%;
       padding: 0px 0px 0px 0px;
       height: 10rem;
       background-color: aquamarine;
@@ -164,45 +163,6 @@
     }
   }
 }
-@media (max-width: 767px) {
-  .creator {
-    margin-bottom: 4rem;
-    margin-top: 4rem;
-
-    .row {
-      border: 1px solid #1c6ea4;
-      border-radius: 0px 24px 0px 24px;
-      padding: 1rem;
-      box-shadow: $shadow18;
-      transition: 400ms;
-      .image {
-        height: 18rem;
-        img {
-          @include imgFit;
-          width: 100%;
-        }
-      }
-      .details {
-        margin-top: 2rem;
-        margin-bottom: 3rem;
-        padding: 0%;
-        text-align: center;
-        h1 {
-          font-family: $ffHeading2;
-          font-weight: bold;
-        }
-        h5 {
-          font-family: $ffPara2;
-          font-weight: bold;
-        }
-        @include button;
-      }
-      &:hover {
-        @include boxHover;
-      }
-    }
-  }
-}
 
 .trending {
   margin-bottom: 4rem;
@@ -271,6 +231,137 @@
     }
   }
 }
+@media (max-width: 767px) {
+  .allTests {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  
+    .row {
+      text-align: center;
+      h1 {
+        font-family: $ffHeading;
+      }
+      h5 {
+        font-size: 1.2rem;
+        font-family: $ffPara2;
+        font-weight: bold;
+      }
+      .box {
+        position: relative;
+        display: inline-block;
+        width: 80%;
+        height: 10rem;
+        background-color: aquamarine;
+        text-align: center;
+      }
+    }
+  }
+  .creator {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 3rem;
+
+    .row {
+      border: 1px solid #1c6ea4;
+      border-radius: 0px 24px 0px 24px;
+      padding: 1rem;
+      .image {
+        height: 14rem;
+        img {
+          @include imgFit;
+          width: 100%;
+        }
+      }
+      .details {
+          font-family: $ffHeading2;
+          font-weight: bold;
+        }
+        h5 {
+          font-family: $ffPara2;
+          font-weight: bold;
+        }
+        @include button;
+      }
+      &:hover {
+        @include boxHover;
+      }
+    }
+  }
+
+  .trending {
+    margin-bottom: 4rem;
+    .row {
+      .trending_topics {
+        margin-top: 1rem;
+        a{
+          text-decoration: none;
+          color: rgb(37, 37, 37);
+        }
+  
+        h1 {
+          font-family: $ffHeading2;
+          font-weight: bold;
+        }
+      }
+      .topics {
+        margin-top: 2rem;
+        background-color: #ffff;
+        height: 6rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        border-radius: 1rem 0rem;
+        box-shadow: -4px 4px 18px 0px rgba(0, 0, 0, 0.411);
+        font-size: 1rem;
+        cursor: pointer;
+       
+    }
+  }
+}
+
+
+@media (max-width: 575px) {
+  .trending {
+    margin-bottom: 4rem;
+    .row {
+      .trending_topics {
+        width: 70%;
+        margin: auto;
+        margin-top: 2rem;
+        a{
+          text-decoration: none;
+          color: rgb(37, 37, 37);
+        }
+  
+        h1 {
+          font-family: $ffHeading2;
+          font-weight: bold;
+        }
+      }
+      .topics {
+        margin-top: 2rem;
+        background-color: #ffff;
+        height: 6rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        border-radius: 1rem 0rem;
+        box-shadow: -4px 4px 18px 0px rgba(0, 0, 0, 0.411);
+        font-size: 1rem;
+        cursor: pointer;
+       
+    }
+
+  }
+  .popular_section {
+    padding-left: 5%;
+  }
+  .popular {
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+}
+}
+
 @media (max-width: 991px) {
   .trending {
     margin-bottom: 4rem;
@@ -289,14 +380,7 @@
         height: 5rem;
         text-align: center;
         margin-bottom: 1rem;
-        border-radius: 2rem 0rem;
-        -webkit-box-shadow: -4px 4px 18px 0px rgba(7, 82, 0, 1);
-        -moz-box-shadow: -4px 4px 18px 0px rgba(7, 82, 0, 1);
-        box-shadow: -4px 4px 18px 0px rgba(7, 82, 0, 1);
-
-        h4 {
-          transform: translateY(50%);
-        }
+        border-radius: 1rem 0rem;
       }
 
       .popular_section {
