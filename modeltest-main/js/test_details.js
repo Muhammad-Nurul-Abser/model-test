@@ -15,7 +15,9 @@ addList = data => {
 
     let items = data.data;
     items.forEach(element => {
-        $('.chepters').append('<div class="col-md-4 col-sm-6"><div class="chepter" id=' + element.id + ' >' + element.name + '<br>Total Questions : ' + element.count + ' </div ></div >')
+        // $('.chepters').append('<div class="col-md-4 col-sm-6"><div class="chepter" id=' + element.id + ' >' + element.name + '<br>Total Questions : ' + element.count + ' </div ></div >')
+
+        $('.chepters').append('<div class="col-md-4 col-sm-6"><div class="chepter" id=' + element.id + ' >' + element.name + '<h5>Total Question : <span>' + element.count + '</span></h5>', ' </div ></div >')
 
     });
 

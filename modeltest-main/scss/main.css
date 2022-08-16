@@ -283,7 +283,6 @@ body {
 .featured .row .featured_element .caption {
   position: absolute;
   top: 0%;
-  left: 0;
   width: 100%;
   height: 100%;
   background-color: #0c0d0ea4;
@@ -292,6 +291,14 @@ body {
   word-wrap: break-word;
   max-height: 100%;
   border-radius: 1rem;
+}
+
+.featured .row .featured_element .caption h5 {
+  position: absolute;
+  width: 100%;
+  top: 70%;
+  left: 0%;
+  background-color: rgba(182, 178, 178, 0.384);
 }
 
 .featured .row .featured_element:hover {

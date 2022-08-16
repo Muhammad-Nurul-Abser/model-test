@@ -60,6 +60,14 @@
       -webkit-box-shadow: -2px 3px 9px 0px rgba(57, 97, 70, 1);
       -moz-box-shadow: -2px 3px 9px 0px rgba(57, 97, 70, 1);
       box-shadow: -2px 3px 9px 0px rgba(57, 97, 70, 1);
+
+
+      h5{
+        position: absolute;
+        width: 100%;
+        top: 70%;
+        background-color: rgba(182, 178, 178, 0.384);
+      }
     }
 
     .selection {
@@ -92,9 +100,13 @@
         font-family: $ffPara2;
         font-weight: bold;
       }
+      #questions{
+        font-size: 14px;
+      }
       #time {
         margin-top: 1rem;
         margin-bottom: 2rem;
+        font-size: 14px;
       }
       select {
         width: 70%;
@@ -148,6 +160,58 @@
             padding-right: 0.5rem;
             color: red;
           }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .test_details {
+    .row {
+      text-align: center;
+      .chepters {
+        margin-top: 1.5rem;
+      }
+      .chepter {
+        height: 8rem;
+        width: 80%;
+      }
+
+      .selection {
+        width: 90%;
+        margin: 0rem auto  1rem auto;
+
+        button {
+          padding: 0.6rem 1.7rem 0.6rem 1.7rem;
+        }
+      }
+
+      .related {
+        width: 90%;
+        margin: auto;
+        ul {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:399px) {
+  .test_details {
+
+    .row {
+      padding-top: 0%;
+      .selection {
+        width: 90%;
+        margin: 0rem auto  1rem auto;
+
+        #questions{
+          font-size: 12px;
+        }
+        #time {
+          font-size: 12px;
         }
       }
     }

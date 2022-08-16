@@ -73,6 +73,13 @@
   box-shadow: -2px 3px 9px 0px #396146;
 }
 
+.test_details .row .chepter h5 {
+  position: absolute;
+  width: 100%;
+  top: 70%;
+  background-color: rgba(182, 178, 178, 0.384);
+}
+
 .test_details .row .selection {
   padding: 2rem 1rem 2rem 1rem;
   text-align: center;
@@ -102,9 +109,14 @@
   font-weight: bold;
 }
 
+.test_details .row .selection #questions {
+  font-size: 14px;
+}
+
 .test_details .row .selection #time {
   margin-top: 1rem;
   margin-bottom: 2rem;
+  font-size: 14px;
 }
 
 .test_details .row .selection select {
@@ -163,5 +175,48 @@
   content: "✔";
   padding-right: 0.5rem;
   color: red;
+}
+
+@media (max-width: 575px) {
+  .test_details .row {
+    text-align: center;
+  }
+  .test_details .row .chepters {
+    margin-top: 1.5rem;
+  }
+  .test_details .row .chepter {
+    height: 8rem;
+    width: 80%;
+  }
+  .test_details .row .selection {
+    width: 90%;
+    margin: 0rem auto  1rem auto;
+  }
+  .test_details .row .selection button {
+    padding: 0.6rem 1.7rem 0.6rem 1.7rem;
+  }
+  .test_details .row .related {
+    width: 90%;
+    margin: auto;
+  }
+  .test_details .row .related ul {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 399px) {
+  .test_details .row {
+    padding-top: 0%;
+  }
+  .test_details .row .selection {
+    width: 90%;
+    margin: 0rem auto  1rem auto;
+  }
+  .test_details .row .selection #questions {
+    font-size: 12px;
+  }
+  .test_details .row .selection #time {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=details.css.map */

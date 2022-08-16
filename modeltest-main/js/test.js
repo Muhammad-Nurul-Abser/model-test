@@ -13,7 +13,7 @@ $(document).ready(function () {
         let item = data.data;
         let count = data.count;
         for (var i = 0; i < item.length; i++) {
-            $('#allTests').append('<div class="col-md-4 col-sm-6 col-lg-3"> <a a href = "test_details.html?id=' + item[i].id + '" ><div class="box"><img src="https://admin.modeltest.online/public/images/category/' + item[i].image + '" class="img-fluid" alt=""><div class="text-box"><h4>' + item[i].name + '</h4><h5>Total Questions :' + count[i].count + '</h5> </div></div></a></div > ')
+            $('#allTests').append('<div class="col-md-4 col-sm-6 col-lg-3"> <a a href = "test_details.html?id=' + item[i].id + '" ><div class="box"><img src="https://admin.modeltest.online/public/images/category/' + item[i].image + '" class="img-fluid" alt=""><div class="text-box"><h4>' + item[i].name + '</h4><h5>Total Questions: ' + count[i].count + '</h5> </div></div></a></div > ')
 
 
         }
