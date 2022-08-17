@@ -15,7 +15,7 @@ function addTests(data) {
         const items = data.data;
         items.forEach(element => {
 
-            $('#tests').append('  <div class="col-md-4 col-sm-6 col-lg-3"><div div class= "test-name" id = "tooltip" > <a href="unit.html?id=' + element.id + '"> <div class="caption"><h4>'+element.title+'</h4> <small>Review 3.5 ★</small> <br><small>Average Percentage: 69%</small><p class="note"><small>Exam taken: 700</small></p> </div></a></div ></div >')
+            $('#tests').append('  <div class="col-md-4 col-sm-6 col-lg-3"><div div class= "test-name" id = "tooltip" > <a href="unit.html?id=' + element.id + '"> <div class="caption"><h4>'+element.title+'</h4> <small class="review">Review 3.5 ★</small> <br><small class="avgParcentage">Average Percentage: 69%</small><p class="note"><small>Exam taken: 700</small></p> </div></a></div ></div >')
 
         });
     }

@@ -69,8 +69,8 @@
   margin-bottom: 1rem;
   border-radius: 1rem;
   cursor: pointer;
-  -webkit-box-shadow: -2px 3px 9px 0px #396146;
-  box-shadow: -2px 3px 9px 0px #396146;
+  -webkit-box-shadow: rgba(4, 12, 83, 0.459) 0px 3px 8px;
+          box-shadow: rgba(4, 12, 83, 0.459) 0px 3px 8px;
 }
 
 .test_details .row .chepter h5 {

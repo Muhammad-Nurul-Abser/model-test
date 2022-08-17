@@ -164,6 +164,7 @@ body {
       .caption {
         position: absolute;
         top: 0%;
+        left: 0;
         width: 100%;
         height: 100%;
         background-color: #0c0d0ea4;
@@ -172,13 +173,6 @@ body {
         word-wrap: break-word;
         max-height: 100%;
         border-radius: 1rem;
-        h5{
-          position: absolute;
-          width: 100%;
-          top: 70%;
-          left: 0%;
-          background-color: rgba(182, 178, 178, 0.384);
-        }
       }
       &:hover {
         @include boxHover;
@@ -815,6 +809,11 @@ body {
     /* .footer-content-column {
         width: 49.99%;
     } */
+    .footer-call-to-action{
+      a{
+        font-weight: 600;
+      }
+    }
     .footer{
       text-align: center;
       .footer-copyright{
@@ -839,6 +838,19 @@ body {
       }
       .footer-social-link{
         margin-top: 48.3rem;
+      }
+    }
+  }
+  @media (max-width: 1007px) and (min-width:768px) {
+    .footer-content-column{
+      .footer-call-to-action{
+        a{
+          font-weight: 600;
+        }
+      }
+
+      #call{
+        display: none;
       }
     }
   }

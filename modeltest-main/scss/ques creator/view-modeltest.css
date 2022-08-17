@@ -23,46 +23,52 @@
 }
 
 .page .main .row {
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   padding-top: 1rem;
 }
 
 .page .main .row .view-m-test {
   width: 15.5rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
 .page .main .row .view-m-test .view-test {
+  margin: auto;
   position: relative;
   padding-top: 1rem;
   text-align: center;
   width: 13rem;
-  height: 11rem;
+  height: 10rem;
   border-radius: 10px;
   overflow: hidden;
   background-color: #fff;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  -webkit-box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+          box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 
 .page .main .row .view-m-test .view-test h5 {
   margin-top: 1rem;
   opacity: 0.9;
+  width: 100%;
+  top: 40%;
   font-size: 16px;
+  position: absolute;
+  overflow: hidden;
 }
 
 .page .main .row .view-m-test .view-test p {
   width: 100%;
-  background-color: #f8f5f5;
-  font-weight: 400;
   position: absolute;
-  top: 87%;
+  top: 70%;
+  background-color: rgba(182, 178, 178, 0.384);
+  overflow: hidden;
 }
 
 .page .main .row .view-m-test .btn-view {
   text-align: center;
+  width: 100%;
+  height: 3rem;
+  border-bottom: 1px solid gray;
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
@@ -70,12 +76,10 @@
 .page .main .row .view-m-test .btn-view .test-edit {
   text-decoration: none;
   margin: 2%;
-  border: 2px solid #beb6b6;
-  padding: 2px 1rem 2px 1rem;
+  padding: 2px 1rem 0.3rem 1rem;
   border-radius: 5px;
   color: black;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-          box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background-color: lightblue;
 }
 
 .page .main .row .view-m-test .btn-view .test-edit:hover {
@@ -88,16 +92,14 @@
 .page .main .row .view-m-test .btn-view .test-delete {
   text-decoration: none;
   margin: 2%;
-  border: 2px solid #beb6b6;
-  padding: 2px 1rem 2px 1rem;
+  padding: 2px 1rem 0.3rem 1rem;
   border-radius: 5px;
   color: black;
-  -webkit-box-shadow: rgba(179, 174, 174, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-          box-shadow: rgba(179, 174, 174, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background-color: rgba(139, 0, 0, 0.514);
 }
 
 .page .main .row .view-m-test .btn-view .test-delete:hover {
-  background-color: #004658;
+  background-color: darkred;
   color: #fff;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
