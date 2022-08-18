@@ -173,6 +173,13 @@ body {
         word-wrap: break-word;
         max-height: 100%;
         border-radius: 1rem;
+        h5{
+          position: absolute;
+          width: 100%;
+          left: 0%;
+          top: 70%;
+          background-color: rgba(182, 178, 178, 0.384);
+        }
       }
       &:hover {
         @include boxHover;

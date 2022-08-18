@@ -294,6 +294,14 @@ body {
   border-radius: 1rem;
 }
 
+.featured .row .featured_element .caption h5 {
+  position: absolute;
+  width: 100%;
+  left: 0%;
+  top: 70%;
+  background-color: rgba(182, 178, 178, 0.384);
+}
+
 .featured .row .featured_element:hover {
   -webkit-transform: translateY(-1.5rem);
           transform: translateY(-1.5rem);
